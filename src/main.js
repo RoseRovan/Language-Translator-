@@ -64,3 +64,19 @@ function handleOnChange(e) {
   textToDetect = e.target.value;
   detectFunction(textToDetect);
 }
+// this adds a list of languages to a select component
+const select = document.getElementById("select-language");
+for (language in languages) {
+  select.options[select.options.length] = new Option(
+    languages[language],
+    language
+  );
+}
+// this adds a list of languages to a select component
+const select = document.getElementById("select-language");
+for (language in languages) {
+  select.options[select.options.length] = new Option(
+    languages[language],
+    language
+  );
+}
