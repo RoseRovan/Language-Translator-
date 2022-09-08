@@ -11,8 +11,10 @@
     background-color: black;
     color: aliceblue;
   }
+  
+  
   .logo {
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
     margin-left: 30px;
@@ -45,7 +47,7 @@
   }
   
   /* NAVBAR END */
-  .container {
+  .mobile-navigation {
     width: 100%;
     background-color: blanchedalmond;
     margin: 0px;
@@ -63,7 +65,7 @@
   .search-container {
     margin-top: 3rem;
   }
-  .welcome {
+  .buttons {
     color: purple;
   }
   .type-input {
@@ -134,7 +136,45 @@
       font-size: 25px;
       margin-top: 2rem;
     }
+    .rating-service {
+        background-color: wheat;
+        width: 100%;
+        flex-direction: row;
+        display: flex;
+        font-size: 22px;
+      }
   }
+  .comment {
+    width: 40%;
+    margin-left: 5%;
+  }
+  .testimonials {
+    width: 40%;
+    margin-left: 5%;
+  }
+  #rating-list {
+    /* text-align: center; */
+    color: purple;
+  }
+  #rating-form {
+    text-align: center;
+    color: purple;
+  }
+  .button {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: purple;
+    color: aliceblue;
+    font-size: 16px;
+  }
+  @media only screen and (max-width: 500px) {
+    icon-bar {
+      display: block;
+      width: 22px;
+      height: 21px;
+      border-radius: 1px;
+      margin-top: -5rem;
+    }
   .footer {
     width: 100%;
     flex-direction: row;
