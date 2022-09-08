@@ -119,3 +119,36 @@ const detectFunction = async (text) => {
       })
       .catch((err) => console.error(err));
   };
+  //fetch/ POST request
+const translateFunction = async (text) => {
+    const data = {};
+    console.log("LANG TO TRANSLATE: ", text);
+  
+    const encodedParams = new URLSearchParams();
+    encodedParams.append("q", `${textToDetect}`);
+    encodedParams.append("target", text);
+    encodedParams.append("source", initialLanguage);
+  
+    const postTranslateText = {
+      method: "POST",
+      headers: {
+        "content-type": "application/x-www-form-urlencoded",
+        "Accept-Encoding": "application/gzip",
+        "X-RapidAPI-Key": "d7c3d6733cmsh3dcf0d07a92fd54p133c88jsn6cdec393f458",
+        "X-RapidAPI-Host": "google-translate1.p.rapidapi.com",
+      },
+      body: encodedParams,
+    };
+  
+    fetch(
+      "https://google-translate1.p.rapidapi.com/language/translate/v2",
+      postTranslateText
+    )
+      .then((response) => response.json())
+      .then((response) => {
+        console.log(response);
+        const resp = response.data.translations[0].translatedText;
+        translatedData.textContent = `Translated Text: ${resp}`;
+      })
+      .catch((err) => console.error(err));
+  };
