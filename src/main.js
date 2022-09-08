@@ -80,3 +80,9 @@ for (language in languages) {
     language
   );
 }
+const selectedLang = document.getElementById("select-language");
+selectedLang.addEventListener("change", handleLanguageTranslate);
+function handleLanguageTranslate(e) {
+  console.log("SELECTED LANG: ", e.target.value);
+  translateFunction(e.target.value);
+}
