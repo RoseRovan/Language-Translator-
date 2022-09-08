@@ -1,43 +1,40 @@
 * {
-    list-style-type: none;
+    /* list-style-type: none; */
     text-decoration: none;
     box-sizing: border-box;
   }
   /*NAVBAR START*/
-.navbar {
+  .nav {
     height: 80px;
     width: 100%;
     padding-top: 20px;
     background-color: black;
     color: aliceblue;
   }
-  
-  
   .logo {
     font-size: 35px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Oleo Script", cursive;
     font-weight: bolder;
-    margin-left: 30px;
   }
-  .navbar ul {
+  .nav ul {
     float: right;
     justify-content: space-between;
   }
-  .navbar ul li {
+  .nav ul li {
     display: inline-block;
   }
   
-  .navbar ul li a.active {
+  .nav ul li a.active {
     transition: 5s;
     color: white;
   }
-  .navbar ul li a:hover {
+  .nav ul li a:hover {
     color: white;
     font-weight: bold;
   }
-  .navbar ul li a:hover {
+  .nav ul li a:hover {
     text-decoration-line: underline;
-    text-decoration-color: purple;
+    text-decoration-color: #ed661f;
   }
   
   .nav-items {
@@ -47,17 +44,15 @@
   }
   
   /* NAVBAR END */
-  .mobile-navigation {
+  .container {
     width: 100%;
     background-color: blanchedalmond;
     margin: 0px;
     height: 85vh;
-
+    /* background-image: url(/assets/soul.png); */
   }
   .subText {
     color: purple;
-    font-size: 2rem;
-
   }
   .head {
     text-align: center;
@@ -67,15 +62,8 @@
   .search-container {
     margin-top: 3rem;
   }
-  .buttons {
+  .welcome {
     color: purple;
-    padding: 10px 20px; 
-    border: none;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    font-style: italic;
-
-    
   }
   .type-input {
     width: 300px;
@@ -101,10 +89,55 @@
     font-size: 25px;
     margin-top: 2rem;
   }
-  .event-log {
-    width: 50%;
-    height: 20px;
-    justify-items: flex-end;
+  .rating-service {
+    background-color: wheat;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    font-size: 22px;
+  }
+  .comment {
+    width: 40%;
+    margin-left: 5%;
+  }
+  .testimonials {
+    width: 40%;
+    margin-left: 5%;
+  }
+  #rating-list {
+    /* text-align: center; */
+    color: purple;
+  }
+  #rating-form {
+    text-align: center;
+    color: purple;
+  }
+  .button {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: purple;
+    color: aliceblue;
+    font-size: 16px;
+  }
+  
+  .footer {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    margin-right: 3rem;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+  }
+  .footer a:hover {
+    color: black;
+    text-decoration-line: underline;
+    text-decoration-color: #ed661f;
+  }
+  .footerBox {
+    margin-left: 10%;
+    width: 40%;
+    /* margin-left: 5%; */
   }
   @media only screen and (max-width: 500px) {
     icon-bar {
@@ -146,61 +179,33 @@
       margin-top: 2rem;
     }
     .rating-service {
-        background-color: wheat;
-        width: 100%;
-        flex-direction: row;
-        display: flex;
-        font-size: 22px;
-      }
-  }
-  .comment {
-    width: 40%;
-    margin-left: 5%;
-  }
-  .testimonials {
-    width: 40%;
-    margin-left: 5%;
-  }
-  #rating-list {
-    /* text-align: center; */
-    color: purple;
-  }
-  #rating-form {
-    text-align: center;
-    color: purple;
-  }
-  .button {
-    border-radius: 20px;
-    padding: 10px;
-    background-color: purple;
-    color: aliceblue;
-    font-size: 16px;
-  }
-  @media only screen and (max-width: 500px) {
-    icon-bar {
-      display: block;
-      width: 22px;
-      height: 21px;
-      border-radius: 1px;
-      margin-top: -5rem;
+      background-color: wheat;
+      width: 100%;
+      flex-direction: row;
+      display: flex;
+      font-size: 22px;
     }
-    
-  .footer {
-    width: 100%;
-    flex-direction: row;
-    display: flex;
-    margin-right: 3rem;
-    background-color: black;
-    color: white;
-    font-size: 15px;
-  }
-  .footer a:hover {
-    color: black;
-    text-decoration-line: underline;
-    text-decoration-color: #ed661f;
-  }
-  .footerBox {
-    margin-left: 10%;
-    width: 40%;
-    margin-left: 5%;
+    .comment {
+      width: 40%;
+      margin-left: 5%;
+    }
+    .Rate-Us {
+      width: 40%;
+      margin-left: 5%;
+    }
+    #rating-list {
+      /* text-align: center; */
+      color: purple;
+    }
+    #rating-form {
+      text-align: center;
+      color: purple;
+    }
+    .button {
+      border-radius: 20px;
+      padding: 10px;
+      background-color: purple;
+      color: aliceblue;
+      font-size: 16px;
+    }
   }

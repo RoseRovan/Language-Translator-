@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Translate for me</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div class="mobile-navigation">
-        <!--  START HEADER NAVIGATION-->
+    <div class="container">
+      <!--  START HEADER NAVIGATION-->
       <div class="header">
         <div class="margin-left">
 
@@ -20,29 +20,26 @@
             </button>
           </div>
         </div>
-        <nav class="navbar">
-            <label class="logo">Language Translator</label>
+        <nav class="nav">
+          <label class="logo">Language Translator</label>
           <ul>
             <li><a class="nav-items" href="#">Home</a></li>
             <li><a class="nav-items" href="#">Languages</a></li>
-            <li><a class="nav-items" href="#">Support </a></li>
+            <li><a class="nav-items" href="#">FAQ</a></li>
           </ul>
         </nav>
         <div class="margin-right"></div>
       </div>
-       <!--  END HEADER NAVIGATION-->
-       <div class="head">
+      <!--  END HEADER NAVIGATION-->
+      <div class="head">
         <h3 class="subText">
-          Instantly Speak 100+ Languages
+          Learn over 150 languages from different regions of the continent
         </h3>
-        <div class="buttons">
-            <a class="custom-button" href="#">
-              Try for free
-            </a>
-        </div>
+        <h3 class="welcome">Welcome!</h3>
+
         <div class="search-container">
           <input
-          placeholder="Enter any word and press Enter"
+            placeholder="Enter some text and press Enter"
             name="my-input"
             class="type-input"
           />
@@ -52,35 +49,34 @@
           </div>
         </div>
         <select placeholder="Select Language" id="select-language" width="20px">
-            Select Language
-          </select>
-          <div id="translated-text"></div>
-         
-        </div>
-           </div>
-           
-           <h3 style="text-align: center; font-weight: 800;  margin-top: 4rem;
-           "> Testimonials</h3>
-     
-          <div class="rating-service">
-     
-           <div class="testimonials">
-             <ol id="rating-list">
-               <li>I learnt five languages in just a month!</li>
-               <li>I was able to translate documents</li>
-             </ol>
-           </div>
-           <div class="comment">
-             <form id="rating-form">
-             <label for="rating">Rate your experience</label>
-             <textarea style="margin-top: 2rem; padding: 10px;" id="rating"></textarea>
-             <button class="button" type="submit">Submit comment</button>
-           </form>
-         </div>
-           
-          </div>
+          Select Language
+        </select>
+        <div id="translated-text"></div>
+      </div>
+      <h3 style="text-align: center; font-weight: 800;  margin-top: 4rem;
+      "> Testimonials</h3>
 
-              
+     <div class="rating-service">
+
+      <div class="testimonials">
+        <ol id="rating-list">
+          <li>I learnt five languages in just a month!</li>
+          <li>I was able to translate documents</li>
+        </ol>
+      </div>
+      <div class="comment">
+        <form id="rating-form">
+        <label for="rating">Rate your experience</label>
+        <textarea style="margin-top: 2rem; padding: 10px;" id="rating"></textarea>
+        <button class="button" type="submit">Submit comment</button>
+      </form>
+    </div>
+      
+     </div>
+      
+      </div>
+         </div>
+         <div class="footer">
           <div class="footerBox">
             <ul style="list-style-type: none">
               <li ><a  >About</a></li>
@@ -89,7 +85,7 @@
               <li><a >More...</a></li>
             </ul>
           </div>
-          <div class="footer">
+       
           <div class="footerBox">
             <ul style="list-style-type: none">
               <li><a >Others</a></li>
@@ -98,5 +94,10 @@
               <li><a>Privacy and Policy</a></li>
             </ul>
           </div>
-          </div>
          
+          
+
+    <script src="./src/main.js"></script>
+  </body>
+</html>
+Footer
