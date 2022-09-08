@@ -49,3 +49,9 @@ const languages = {
     yo: "Yoruba",
     zu: "Zulu",
   };
+  const input = document.querySelector("input");
+const log = document.getElementById("typed-text");
+const initialLang = document.getElementById("initial-lang");
+const translatedData = document.getElementById("translated-text");
+let textToDetect = "";
+let initialLanguage = "";
