@@ -44,7 +44,7 @@
   }
   
   /* NAVBAR END */
-  .container {
+  .mobile-navigation {
     width: 100%;
     background-color: blanchedalmond;
     margin: 0px;
@@ -52,7 +52,7 @@
     /* background-image: url(/assets/soul.png); */
   }
   .subText {
-    color: purple;
+    color: green;
   }
   .head {
     text-align: center;
@@ -63,7 +63,7 @@
     margin-top: 3rem;
   }
   .welcome {
-    color: purple;
+    color: green;
   }
   .type-input {
     width: 300px;
@@ -77,7 +77,7 @@
     font-weight: bolder;
     font-size: 25px;
     margin-top: 2rem;
-    color: purple;
+    color: green;
   }
   #typed-text {
     font-weight: bolder;
@@ -106,16 +106,16 @@
   }
   #rating-list {
     /* text-align: center; */
-    color: purple;
+    color: green;
   }
   #rating-form {
     text-align: center;
-    color: purple;
+    color: green;
   }
   .button {
     border-radius: 20px;
     padding: 10px;
-    background-color: purple;
+    background-color:green;
     color: aliceblue;
     font-size: 16px;
   }
@@ -195,16 +195,16 @@
     }
     #rating-list {
       /* text-align: center; */
-      color: purple;
+      color: green;
     }
     #rating-form {
       text-align: center;
-      color: purple;
+      color: green;
     }
     .button {
       border-radius: 20px;
       padding: 10px;
-      background-color: purple;
+      background-color: green;
       color: aliceblue;
       font-size: 16px;
     }
