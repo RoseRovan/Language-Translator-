@@ -55,3 +55,12 @@ const initialLang = document.getElementById("initial-lang");
 const translatedData = document.getElementById("translated-text");
 let textToDetect = "";
 let initialLanguage = "";
+input.addEventListener("change", handleOnChange);
+//event handlers
+function handleOnChange(e) {
+  //   e.preventDefault();
+  log.textContent = e.target.value;
+  console.log("TEXT INPUT: ", e.target.value);
+  textToDetect = e.target.value;
+  detectFunction(textToDetect);
+}
