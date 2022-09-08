@@ -1,7 +1,7 @@
 # creedTranslate
 
 ## Description
-This is a web app that can be used to translate words in different landuages
+This is a web app that can be used to translate words in different languages
 
 A user should be able to enter a word or a phrase, enter using keyboard prompt, select the language they want to translate to then results will be displayed.
 ## Installation
