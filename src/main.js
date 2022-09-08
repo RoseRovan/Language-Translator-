@@ -114,7 +114,7 @@ const detectFunction = async (text) => {
       .then((response) => {
         console.log(response);
         const resp = response.data.detections[0][0].language;
-        initialLang.textContent = `Language detected: ${resp}`;
+        initialLang.textContent = `Language detected: ${languages[resp]}`;
         initialLanguage = resp;
       })
       .catch((err) => console.error(err));
