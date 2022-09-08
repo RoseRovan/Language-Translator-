@@ -86,3 +86,36 @@ function handleLanguageTranslate(e) {
   console.log("SELECTED LANG: ", e.target.value);
   translateFunction(e.target.value);
 }
+//fetch request - detect
+
+const detectFunction = async (text) => {
+    const data = {};
+    console.log("DATA TO DETECT: ", text);
+  
+    const encodedParams = new URLSearchParams();
+    encodedParams.append("q", `${text}`);
+  
+    const detectLanguageTyped = {
+      method: "POST",
+      headers: {
+        "content-type": "application/x-www-form-urlencoded",
+        "Accept-Encoding": "application/gzip",
+        "X-RapidAPI-Key": "d7c3d6733cmsh3dcf0d07a92fd54p133c88jsn6cdec393f458",
+        "X-RapidAPI-Host": "google-translate1.p.rapidapi.com",
+      },
+      body: encodedParams,
+    };
+  
+    fetch(
+      "https://google-translate1.p.rapidapi.com/language/translate/v2/detect",
+      detectLanguageTyped
+    )
+      .then((response) => response.json())
+      .then((response) => {
+        console.log(response);
+        const resp = response.data.detections[0][0].language;
+        initialLang.textContent = `Language detected: ${resp}`;
+        initialLanguage = resp;
+      })
+      .catch((err) => console.error(err));
+  };
