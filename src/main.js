@@ -50,45 +50,39 @@ const languages = {
     zu: "Zulu",
   };
   const input = document.querySelector("input");
-const log = document.getElementById("typed-text");
-const initialLang = document.getElementById("initial-lang");
-const translatedData = document.getElementById("translated-text");
-let textToDetect = "";
-let initialLanguage = "";
-input.addEventListener("change", handleOnChange);
-//event handlers
-function handleOnChange(e) {
-  //   e.preventDefault();
-  log.textContent = e.target.value;
-  console.log("TEXT INPUT: ", e.target.value);
-  textToDetect = e.target.value;
-  detectFunction(textToDetect);
-}
-// this adds a list of languages to a select component
-const select = document.getElementById("select-language");
-for (language in languages) {
-  select.options[select.options.length] = new Option(
-    languages[language],
-    language
-  );
-}
-// this adds a list of languages to a select component
-const select = document.getElementById("select-language");
-for (language in languages) {
-  select.options[select.options.length] = new Option(
-    languages[language],
-    language
-  );
-}
-const selectedLang = document.getElementById("select-language");
-selectedLang.addEventListener("change", handleLanguageTranslate);
-function handleLanguageTranslate(e) {
-  console.log("SELECTED LANG: ", e.target.value);
-  translateFunction(e.target.value);
-}
-//fetch request - detect
-
-const detectFunction = async (text) => {
+  const log = document.getElementById("typed-text");
+  const initialLang = document.getElementById("initial-lang");
+  const translatedData = document.getElementById("translated-text");
+  let textToDetect = "";
+  let initialLanguage = "";
+  input.addEventListener("change", handleOnChange);
+  //event handlers
+  function handleOnChange(e) {
+    //   e.preventDefault();
+    log.textContent = e.target.value;
+    console.log("TEXT INPUT: ", e.target.value);
+    textToDetect = e.target.value;
+    detectFunction(textToDetect);
+  }
+  // this adds a list of languages to a select component
+  const select = document.getElementById("select-language");
+  for (language in languages) {
+    select.options[select.options.length] = new Option(
+      languages[language],
+      language
+    );
+  }
+  // this adds a list of languages to a select component
+  
+  const selectedLang = document.getElementById("select-language");
+  selectedLang.addEventListener("change", handleLanguageTranslate);
+  function handleLanguageTranslate(e) {
+    console.log("SELECTED LANG: ", e.target.value);
+    translateFunction(e.target.value);
+  }
+  //fetch request - detect
+  
+  const detectFunction = async (text) => {
     const data = {};
     console.log("DATA TO DETECT: ", text);
   
@@ -120,7 +114,7 @@ const detectFunction = async (text) => {
       .catch((err) => console.error(err));
   };
   //fetch/ POST request
-const translateFunction = async (text) => {
+  const translateFunction = async (text) => {
     const data = {};
     console.log("LANG TO TRANSLATE: ", text);
   
@@ -152,3 +146,5 @@ const translateFunction = async (text) => {
       })
       .catch((err) => console.error(err));
   };
+  
+  
